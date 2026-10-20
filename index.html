@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>El Lamma | اللمة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="homeScreen">
+    <h1>Welcome to El Lamma! </h1>
+    <p>The Ultimate Egyptian Family Game Night</p>
+    <button id="startButton">Start Game</button>
+
+<p>Upload your question bank:</p>
+
+<input type="file" id="csvFile" accept=".csv,text/csv">
+
+<p id="importStatus">Using sample questions</p>
+
+</div>
+
+
+<div id="categoryScreen" class="hidden">
+    <h1>Choose Your Category 🎮</h1>
+
+    
+<button class="categoryButton" data-category="Guess the Singer">
+    🎤 Guess the Singer
+</button>
+
+<button class="categoryButton" data-category="Finish the Lyric">
+    🎶 Finish the Lyric
+</button>
+
+<button class="categoryButton" data-category="3x Translated">
+    🌍 3x Translated
+</button>
+
+<button class="categoryButton" data-category="Emoji to Song">
+    🎭 Emoji to Song
+</button>
+
+    <br><br>
+    <button id="backButton">⬅ Back to Home</button>
+</div>
+
+<div id="questionScreen" class="hidden">
+    <h2 id="categoryTitle"></h2>
+    <h1 id="questionText"></h1>
+
+    <button id="revealButton">👀 Reveal Answer</button>
+
+    <div id="answerBox" class="hidden">
+        <h2 id="answerText"></h2>
+        <p id="pointsText"></p>
+    </div>
+
+    <button id="nextButton">➡ Next Question</button>
+    <button id="categoriesButton">⬅ Categories</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
